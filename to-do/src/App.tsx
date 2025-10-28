@@ -1,3 +1,9 @@
+import Text from "./components/text";
+
 export default function App() {
-  return <div className="text-green-dark">Olá mundo</div>;
+  return (
+    <Text as="h1" variant="body-md" className="text-pink-base">
+      Olá mundo
+    </Text>
+  );
 }
