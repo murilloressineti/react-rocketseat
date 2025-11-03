@@ -1,9 +1,10 @@
 import Text from "./components/text";
 import Icon from "./components/icon";
-import TrashIcon from "./assets/icons/trash.svg?react"
-import CheckIcon from "./assets/icons/check.svg?react"
-import PencilIcon from "./assets/icons/pencil.svg?react"
-import SpinnerIcon from "./assets/icons/spinner.svg?react"
+import TrashIcon from "./assets/icons/trash.svg?react";
+import CheckIcon from "./assets/icons/check.svg?react";
+import PencilIcon from "./assets/icons/pencil.svg?react";
+import SpinnerIcon from "./assets/icons/spinner.svg?react";
+import Badge from "./components/badge";
 
 export default function App() {
   return (
@@ -24,9 +25,14 @@ export default function App() {
 
       <div className="flex gap-1">
         <Icon svg={TrashIcon} className="fill-green-dark" />
-        <Icon svg={CheckIcon} className="fill-pink-base"/>
-        <Icon svg={PencilIcon} className="fill-gray-300"/>
-        <Icon svg={SpinnerIcon} animate className="fill-gray-300"/>
+        <Icon svg={CheckIcon} className="fill-pink-base" />
+        <Icon svg={PencilIcon} className="fill-gray-300" />
+        <Icon svg={SpinnerIcon} animate className="fill-gray-300" />
+      </div>
+
+      <div>
+        <Badge variant="secondary">5</Badge>
+        <Badge variant="primary">2 de 5</Badge>
       </div>
     </div>
   );
