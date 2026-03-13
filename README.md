@@ -27,13 +27,11 @@ Estas são as principais tecnologias utilizadas nos projetos deste repositório:
 ### ⚛️ Frontend
 
 - **React**
-- **JavaScript (ES6+)**
 - **HTML5**
 - **JSX**
 
 ### 🎨 Estilização
 
-- **CSS3**
 - **Tailwind CSS**
 
 ### ⚙️ Ferramentas e Ambiente
