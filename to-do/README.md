@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# Lista de Tarefas - Rocketseat React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Lista de Tarefas** é uma aplicação desenvolvida em **React** para gerenciamento de tarefas do dia a dia, permitindo criar, editar, concluir e remover atividades de forma simples e intuitiva.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido durante a formação **React da Rocketseat**, com foco na prática de conceitos essenciais do React, como componentização, gerenciamento de estado, criação de hooks personalizados e construção de interfaces reutilizáveis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠 **Tecnologias e Ferramentas**
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Aqui estão as tecnologias utilizadas no desenvolvimento deste projeto:
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca para construção da interface da aplicação
+- **Vite**: Ferramenta de build e servidor de desenvolvimento
+- **TypeScript**: Tipagem estática para maior segurança e organização
+- **Tailwind CSS**: Estilização utilitária e responsiva
+- **Class Variance Authority (CVA)**: Gerenciamento de variantes de componentes
+- **React Hooks**: Controle de estado e lógica da aplicação
+- **Git e GitHub**: Controle de versão e hospedagem do código
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 💻 **Projeto**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Confira abaixo uma prévia e acesse o projeto completo [aqui](https://to-do-deploy-react.vercel.app/):
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+<img src="src/assets/images/thumbnail.png" alt="Imagem do Projeto" />
+
+---
+
+## ✅ **Funcionalidades**
+
+- Criação de novas tarefas
+- Edição do título das tarefas
+- Marcação de tarefas como concluídas
+- Exclusão de tarefas
+- Cancelamento da criação ou edição de tarefas
+- Componentes reutilizáveis
+- Interface responsiva
+- Estados de carregamento (Skeleton Loading)
+
+---
+
+## ⚙️ Instalação e Execução
+
+Siga os passos abaixo para clonar o projeto e executá-lo localmente em sua máquina:
+
+### ✅ Pré-requisitos
+
+- [Node.js](https://nodejs.org/) instalado
+- [Git](https://git-scm.com/) instalado
+- [pnpm](https://pnpm.io/) instalado
+
+### 📥 1. Clone o repositório
+
+```bash
+git clone https://github.com/murilloressineti/react-rocketseat
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📂 2. Acesse a pasta do projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd react-rocketseat/to-do
 ```
+
+### 📦 3. Instale as dependências
+
+```bash
+pnpm install
+```
+
+### 🚀 4. Execute o projeto
+
+```bash
+pnpm dev
+```
+
+---
+
+## 📝 **Licença**
+
+Este projeto está sob a licença **MIT**. Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
+
+---
+
+## 👨🏻‍💻 **Autor**
+
+Feito por **Murillo Ressineti**, aluno da Rocketseat e desenvolvedor Front-end. Conecte-se comigo no LinkedIn para mais informações:
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murilloressineti/)
+
+---
+
+## 📬 **Contato**
+
+Se você tiver dúvidas, sugestões ou gostaria de discutir sobre o projeto, sinta-se à vontade para entrar em contato!
