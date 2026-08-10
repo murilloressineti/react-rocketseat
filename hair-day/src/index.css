@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+
+  /* Brand Colors */
+  --color-yellow-light: #dbc170;
+  --color-yellow: #b8952e;
+  --color-yellow-dark: #846f2e;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-gray-100: #f5f4f5;
+  --color-gray-200: #b2afb6;
+  --color-gray-300: #98959d;
+  --color-gray-400: #7a767f;
+  --color-gray-500: #3e3c41;
+  --color-gray-600: #2e2c30;
+  --color-gray-700: #232225;
+  --color-gray-800: #19181b;
+  --color-gray-900: #050505;
+  --color-black: #000000;
+
+  /* Text Colors */
+  --color-text-primary: var(--color-gray-100);
+  --color-text-secondary: var(--color-gray-200);
+  --color-text-tertiary: var(--color-gray-300);
+  --color-text-quaternary: var(--color-gray-400);
+  --color-text-quinary: var(--color-gray-500);
+  --color-text-senary: var(--color-gray-900);
+  --color-text-title: var(--color-yellow);
+
+  /* Background Colors */
+  --color-bg-default: var(--color-gray-800);
+  --color-bg-light: var(--color-gray-700);
+
+  /* Feedback Colors */
+  --color-feedback-danger: #d03e3e;
+
+  /* Font Family */
+  --font-sans: "Catamaran", sans-serif;
+}
+
+body {
+  @apply antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-500) var(--color-bg-default);
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--color-bg-default);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-500);
+  border-radius: 999px;
+  border: 2px solid var(--color-bg-default);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gray-400);
+}
