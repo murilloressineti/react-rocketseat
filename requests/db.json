@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "mur",
+      "name": "murillo"
+    },
+    {
+      "id": "gab",
+      "name": "gabi"
+    },
+    {
+      "id": "nms_GsdSm0M",
+      "name": "antonio"
+    },
+    {
+      "id": "GC5X-J-nyU8",
+      "name": "maria"
+    },
+    {
+      "id": "test",
+      "name": "teste"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
