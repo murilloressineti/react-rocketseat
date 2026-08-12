@@ -1,77 +1,86 @@
-# React + TypeScript + Vite
+# Requests - Rocketseat React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Requests** é um projeto desenvolvido em **React** com o objetivo de praticar o consumo de **APIs**, demonstrando diferentes formas de realizar requisições HTTP e gerenciar dados assíncronos.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido durante a formação **React da Rocketseat**, com foco em requisições com **Fetch API**, criação de hooks personalizados e utilização do **TanStack Query**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠 **Tecnologias e Ferramentas**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **React**: Biblioteca para construção da aplicação
+- **TypeScript**: Tipagem estática para maior segurança e organização
+- **Vite**: Ferramenta de build e servidor de desenvolvimento
+- **Fetch API**: Realização de requisições HTTP para a API
+- **TanStack Query (React Query)**: Gerenciamento de requisições e dados assíncronos
+- **React Hooks**: Controle de estado, efeitos e lógica da aplicação
+- **Git e GitHub**: Controle de versão e hospedagem do código
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## ✅ **Funcionalidades**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Busca de usuário através da API
+- Listagem de usuários
+- Criação de novos usuários
+- Requisições `GET` e `POST`
+- Tratamento de erros
+- Estados de carregamento
+- Hooks personalizados para requisições
+- Gerenciamento de dados com TanStack Query
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Instalação e Execução
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Siga os passos abaixo para clonar o projeto e executá-lo localmente em sua máquina:
 
+### ✅ Pré-requisitos
+
+- [Node.js](https://nodejs.org/) instalado
+- [Git](https://git-scm.com/) instalado
+- [pnpm](https://pnpm.io/) instalado
+
+### 📥 1. Clone o repositório
+
+```bash
+git clone https://github.com/murilloressineti/react-rocketseat
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📂 2. Acesse a pasta do projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd react-rocketseat/requests
 ```
+
+### 📦 3. Instale as dependências
+
+```bash
+pnpm install
+```
+
+### 🚀 4. Execute o projeto
+
+```bash
+pnpm dev
+```
+
+---
+
+## 📝 **Licença**
+
+Este projeto está sob a licença **MIT**. Para mais detalhes, consulte o arquivo [LICENSE](./LICENSE).
+
+---
+
+## 👨🏻‍💻 **Autor**
+
+Feito por **Murillo Ressineti**, aluno da Rocketseat e desenvolvedor Front-end. Conecte-se comigo no LinkedIn para mais informações:
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murilloressineti/)
+
+---
+
+## 📬 **Contato**
+
+Se você tiver dúvidas, sugestões ou gostaria de discutir sobre o projeto, sinta-se à vontade para entrar em contato!
