@@ -1,15 +1,18 @@
-import React from "react";
 import { tv, type VariantProps } from "tailwind-variants";
-import { useWatch } from "react-hook-form";
-
 import Icon from "./icon";
 import Text, { textVariants } from "./text";
-
-import UploadfileIcon from "../assets/icons/upload-file.svg?react";
+import UploadFileIcon from "../assets/icons/upload-file.svg?react";
 import FileImageIcon from "../assets/icons/image.svg?react";
+import { useWatch } from "react-hook-form";
+import React from "react";
 
 export const inputSingleFileVariants = tv({
-  base: "flex flex-col items-center justify-center w-full border border-solid border-border-primary group-hover:border-border-active rounded-lg gap-1 transition",
+  base: `
+    flex flex-col items-center justify-center w-full
+    border border-solid border-border-primary
+  group-hover:border-border-active
+    rounded-lg gap-1 transition
+  `,
   variants: {
     size: {
       md: "px-5 py-6",
@@ -24,7 +27,7 @@ export const inputSingleFileIconVariants = tv({
   base: "fill-placeholder",
   variants: {
     size: {
-      md: "size-8",
+      md: "w-8 h-8",
     },
   },
   defaultVariants: {
@@ -36,20 +39,20 @@ interface InputSingleFileProps
   extends
     VariantProps<typeof inputSingleFileVariants>,
     Omit<React.ComponentProps<"input">, "size"> {
+  error?: React.ReactNode;
   form: any;
   allowedExtensions: string[];
   maxFileSizeInMB: number;
   replaceBy: React.ReactNode;
-  error?: React.ReactNode;
 }
 
 export default function InputSingleFile({
+  size,
+  error,
   form,
   allowedExtensions,
   maxFileSizeInMB,
   replaceBy,
-  error,
-  size,
   ...props
 }: InputSingleFileProps) {
   const formValues = useWatch({ control: form.control });
@@ -86,13 +89,12 @@ export default function InputSingleFile({
           <div className="w-full relative group cursor-pointer">
             <input
               type="file"
-              className={`absolute top-0 right-0 w-full h-full opacity-0 cursor-pointer`}
+              className="absolute top-0 right-0 w-full h-full opacity-0 cursor-pointer"
               {...props}
             />
-
-            <div className={inputSingleFileVariants()}>
+            <div className={inputSingleFileVariants({ size })}>
               <Icon
-                svg={UploadfileIcon}
+                svg={UploadFileIcon}
                 className={inputSingleFileIconVariants({ size })}
               />
               <Text
@@ -105,20 +107,17 @@ export default function InputSingleFile({
               </Text>
             </div>
           </div>
-
           <div className="flex flex-col gap-1 mt-1">
             {formFile && !isValidExtension() && (
               <Text variant="label-small" className="text-accent-red">
                 Tipo de arquivo inválido
               </Text>
             )}
-
             {formFile && !isValidSize() && (
               <Text variant="label-small" className="text-accent-red">
-                O tamanho do arquivo ultrapassa o máximo
+                Tamanho do arquivo ultrapassa o máximo
               </Text>
             )}
-
             {error && (
               <Text variant="label-small" className="text-accent-red">
                 {error}
@@ -130,15 +129,13 @@ export default function InputSingleFile({
         <>
           {replaceBy}
           <div className="flex gap-3 items-center border border-solid border-border-primary mt-5 p-3 rounded">
-            <Icon svg={FileImageIcon} className="fill-white size-6" />
-            
+            <Icon svg={FileImageIcon} className="fill-white w-6 h-6" />
             <div className="flex flex-col">
               <div className="truncate max-w-80">
                 <Text variant="label-medium" className="text-placeholder">
                   {formFile.name}
                 </Text>
               </div>
-
               <div className="flex">
                 <button
                   type="button"
