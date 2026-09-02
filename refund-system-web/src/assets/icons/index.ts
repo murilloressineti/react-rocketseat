@@ -1,0 +1,13 @@
+export { default as Bed } from "./bed.svg?react";
+export { default as CaretDown } from "./caret-down.svg?react";
+export { default as CaretLeft } from "./caret-left.svg?react";
+export { default as CaretRight } from "./caret-right.svg?react";
+export { default as CheckCircle } from "./check-circle.svg?react";
+export { default as CloudArrowUp } from "./cloud-arrow-up.svg?react";
+export { default as DesktopTower } from "./desktop-tower.svg?react";
+export { default as ForkKnife } from "./fork-knife.svg?react";
+export { default as File } from "./file.svg?react";
+export { default as MagnifyingGlass } from "./magnifying-glass.svg?react";
+export { default as PoliceCar } from "./police-car.svg?react";
+export { default as Receipt } from "./receipt.svg?react";
+export { default as Wrench } from "./wrench.svg?react";
