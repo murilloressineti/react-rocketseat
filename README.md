@@ -71,9 +71,9 @@ Este repositório e os projetos nele contidos estão sob a licença **MIT**. Par
 
 ## 👨🏻‍💻 **Autor**
 
-Feito por **Murillo Ressineti**, aluno da Rocketseat e desenvolvedor front-end. Conecte-se comigo no LinkedIn para mais informações:
+**Murillo Ressineti** — Desenvolvedor de software. Graduando em Análise e Desenvolvimento de Sistemas pela **Universidade Mackenzie** e imersão técnica pela **Rocketseat**.
 
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/murilloressineti/)
+• [LinkedIn](https://www.linkedin.com/in/murilloressineti/) • [E-mail](mailto:murillo@ressineti.com.br) • [Portfólio](https://murilloressineti.com.br/)
 
 ---
 
